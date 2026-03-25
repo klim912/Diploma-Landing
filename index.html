@@ -37,39 +37,221 @@
 <body>
 
   <nav role="navigation" aria-label="Головна навігація">
+    <span class="nav-logo" aria-label="GameStoreApp">GameStoreApp</span>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Про роботу</a></li>
+      <li><a href="#goals">Завдання</a></li>
+      <li><a href="#methodology">Методологія</a></li>
+      <li><a href="#stack">Технології</a></li>
+      <li><a href="#results">Результати</a></li>
+      <li><a href="#contact">Контакти</a></li>
+    </ul>
   </nav>
 
   <header role="banner" aria-labelledby="hero-heading">
+    <div class="hero-tag" role="note">Бакалаврська робота · 2026</div>
     <h1 id="hero-heading">GameStoreApp</h1>
+    <p class="hero-en" lang="en">Online Video Game Store — Full-Stack Web Application</p>
+    <p class="hero-desc">
+      Розробка сучасного повнофункціонального онлайн-магазину відеоігор із інтеграцією
+      платіжних систем, автентифікацією та мультимовним інтерфейсом.
+    </p>
+    <div class="hero-cta">
+      <a href="https://github.com/klim912/Diploma" class="btn btn-primary"
+         target="_blank" rel="noopener" aria-label="Переглянути репозиторій на GitHub">
+        GitHub →
+      </a>
+      <a href="#about" class="btn btn-outline">Детальніше</a>
+    </div>
   </header>
 
   <main>
+
+    <div class="stats-bar" role="region" aria-label="Статистика проєкту">
+      <div class="stat-item">
+        <div class="stat-num">React 19</div>
+        <div class="stat-label">Frontend фреймворк</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">Firebase</div>
+        <div class="stat-label">Backend & Auth</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">Stripe + PP</div>
+        <div class="stat-label">Платіжні системи</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3×</div>
+        <div class="stat-label">Рівні тестування</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">i18n</div>
+        <div class="stat-label">Мультимовність</div>
+      </div>
+    </div>
+
     <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">Актуальність</h2>
+      <p class="section-tag">Актуальність</p>
+      <h2 id="about-heading">Чому це важливо?</h2>
+      <p>
+        Ринок відеоігор є одним із найшвидше зростаючих сегментів цифрової економіки.
+        За прогнозами аналітиків, до 2026 року його обсяг перевищить $200 млрд,
+        а частка цифрових продажів продовжує зростати щорічно.
+      </p>
+      <p>
+        Сучасний гравець очікує зручного, швидкого та безпечного сервісу з підтримкою
+        різних платіжних методів, персоналізованими рекомендаціями та миттєвою доставкою
+        цифрового контенту.
+      </p>
+      <p>
+        Дана робота спрямована на дослідження та реалізацію повного циклу розробки
+        такого сервісу — від проектування архітектури до деплою та тестування.
+      </p>
     </section>
 
     <section id="goals" aria-labelledby="goals-heading">
-      <h2 id="goals-heading">Мета та завдання</h2>
+      <p class="section-tag">Завдання</p>
+      <h2 id="goals-heading">Мета та завдання дослідження</h2>
+      <p>Розробити та задокументувати повнофункціональний веб-застосунок для продажу відеоігор.</p>
+      <div class="goals-grid">
+        <article class="goal-card">
+          <div class="goal-num" aria-hidden="true">01</div>
+          <h3>Проектування архітектури</h3>
+          <p>Розробка масштабованої клієнт-серверної архітектури на основі React + Firebase.</p>
+        </article>
+        <article class="goal-card">
+          <div class="goal-num" aria-hidden="true">02</div>
+          <h3>Інтеграція платіжних систем</h3>
+          <p>Реалізація безпечної оплати через Stripe та PayPal із захистом даних користувача.</p>
+        </article>
+        <article class="goal-card">
+          <div class="goal-num" aria-hidden="true">03</div>
+          <h3>Автентифікація та безпека</h3>
+          <p>Впровадження системи авторизації на Firebase Auth із Google reCAPTCHA.</p>
+        </article>
+        <article class="goal-card">
+          <div class="goal-num" aria-hidden="true">04</div>
+          <h3>Тестування та якість</h3>
+          <p>Триступеневе тестування: unit-тести (Vitest), E2E (Playwright), BDD (Cucumber).</p>
+        </article>
+        <article class="goal-card">
+          <div class="goal-num" aria-hidden="true">05</div>
+          <h3>UX та доступність</h3>
+          <p>Адаптивний інтерфейс з анімаціями, мультимовною підтримкою та стандартами доступності.</p>
+        </article>
+      </div>
     </section>
 
     <section id="methodology" aria-labelledby="method-heading">
-      <h2 id="method-heading">Методологія</h2>
+      <p class="section-tag">Методологія</p>
+      <h2 id="method-heading">Методи дослідження</h2>
+      <div class="method-list" role="list">
+        <div class="method-item" role="listitem">
+          <div class="method-icon" aria-hidden="true">🔬</div>
+          <div>
+            <h3>Аналіз існуючих рішень</h3>
+            <p>Порівняльний аналіз провідних платформ (Steam, Epic Games, GOG).</p>
+          </div>
+        </div>
+        <div class="method-item" role="listitem">
+          <div class="method-icon" aria-hidden="true">🏗️</div>
+          <div>
+            <h3>Компонентна розробка</h3>
+            <p>Компонентно-орієнтована методологія на React із повторним використанням коду.</p>
+          </div>
+        </div>
+        <div class="method-item" role="listitem">
+          <div class="method-icon" aria-hidden="true">🧪</div>
+          <div>
+            <h3>Test-Driven підхід</h3>
+            <p>TDD-практики із Vitest, Playwright та Cucumber на основі user stories.</p>
+          </div>
+        </div>
+        <div class="method-item" role="listitem">
+          <div class="method-icon" aria-hidden="true">🚀</div>
+          <div>
+            <h3>CI/CD та DevOps</h3>
+            <p>Автоматизований деплой через Firebase Hosting із стратегією Release Flow.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="stack" aria-labelledby="stack-heading">
-      <h2 id="stack-heading">Технології</h2>
+      <p class="section-tag">Технологічний стек</p>
+      <h2 id="stack-heading">Використані технології</h2>
+      <div class="stack-grid">
+        <div class="tech-pill"><span class="dot" aria-hidden="true"></span>React 19</div>
+        <div class="tech-pill"><span class="dot blue" aria-hidden="true"></span>TypeScript</div>
+        <div class="tech-pill"><span class="dot" aria-hidden="true"></span>Vite</div>
+        <div class="tech-pill"><span class="dot orange" aria-hidden="true"></span>Firebase</div>
+        <div class="tech-pill"><span class="dot blue" aria-hidden="true"></span>Tailwind CSS</div>
+        <div class="tech-pill"><span class="dot" aria-hidden="true"></span>TanStack Query</div>
+        <div class="tech-pill"><span class="dot red" aria-hidden="true"></span>Stripe</div>
+        <div class="tech-pill"><span class="dot blue" aria-hidden="true"></span>PayPal</div>
+        <div class="tech-pill"><span class="dot" aria-hidden="true"></span>Framer Motion</div>
+        <div class="tech-pill"><span class="dot orange" aria-hidden="true"></span>i18next</div>
+        <div class="tech-pill"><span class="dot red" aria-hidden="true"></span>Playwright</div>
+        <div class="tech-pill"><span class="dot" aria-hidden="true"></span>Vitest</div>
+        <div class="tech-pill"><span class="dot blue" aria-hidden="true"></span>Cucumber</div>
+        <div class="tech-pill"><span class="dot orange" aria-hidden="true"></span>Formik + Yup</div>
+        <div class="tech-pill"><span class="dot" aria-hidden="true"></span>jsPDF</div>
+        <div class="tech-pill"><span class="dot red" aria-hidden="true"></span>React Router v7</div>
+      </div>
     </section>
 
     <section id="results" aria-labelledby="results-heading">
-      <h2 id="results-heading">Результати</h2>
+      <p class="section-tag">Результати</p>
+      <h2 id="results-heading">Очікувані результати</h2>
+      <div class="results-list">
+        <div class="result-item">
+          <div class="result-check" aria-hidden="true">✓</div>
+          <div>
+            <h3>Повнофункціональний магазин</h3>
+            <p>Готовий веб-застосунок із каталогом ігор, кошиком та особистим кабінетом.</p>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-check" aria-hidden="true">✓</div>
+          <div>
+            <h3>Безпечна оплата</h3>
+            <p>Інтегровані Stripe та PayPal із захищеними транзакціями та PDF-чеками.</p>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-check" aria-hidden="true">✓</div>
+          <div>
+            <h3>Задокументована кодова база</h3>
+            <p>Чистий TypeScript-код із покриттям тестами та зрозумілою структурою.</p>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-check" aria-hidden="true">✓</div>
+          <div>
+            <h3>Документований процес розробки</h3>
+            <p>README, ліцензія та змістовні git-коміти згідно зі стратегією Release Flow.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Контакти</h2>
+      <p class="section-tag">Контакти</p>
+      <h2 id="contact-heading">Зв'язатись з автором</h2>
+      <p>Бакалаврська робота виконана в рамках навчання. Репозиторій відкритий для ознайомлення.</p>
+      <div class="contact-links">
+        <a href="https://github.com/klim912/Diploma" class="btn btn-primary"
+           target="_blank" rel="noopener">GitHub репозиторій →</a>
+        <a href="https://github.com/klim912" class="btn btn-outline"
+           target="_blank" rel="noopener">Профіль автора</a>
+      </div>
     </section>
+
   </main>
 
   <footer role="contentinfo">
+    <span class="footer-logo">GameStoreApp</span>
+    <p>© 2026 klim912 · Бакалаврська робота · MIT License</p>
   </footer>
 
 </body>
