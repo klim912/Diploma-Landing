@@ -254,5 +254,16 @@
     <p>© 2026 klim912 · Бакалаврська робота · MIT License</p>
   </footer>
 
+<script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      }),
+      { threshold: 0.1 }
+    );
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>
