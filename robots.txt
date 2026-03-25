@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://klim912.github.io/Diploma/sitemap.xml
